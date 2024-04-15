@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Poppins", sans-serif;
+            background-color: #cc2;
+            background-image: url(snake\ Game.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        canvas{
+            border: 2px solid #cc2;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .scoreClass{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        /* .floatright{
+            float: right;
+            width: 250px;
+            position: absolute;
+            top: 150px;
+            right: 100px;
+            border: 2px solid #fff;
+            background-color: #fffa;
+            border-radius: 25px;
+            text-align: center;
+            padding: 20px;
+        } */
+
+        .btn{
+            background-color: #2cc;
+            border-radius: 6px;
+            padding: 3px;
+            font-weight: 700;
+        }
+        .floatright{
+            
+            width: 100%;
+            border: 2px solid #cc2;
+            background-color: #cc2a;
+            border-radius: 25px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 10px;
+            
+
+        }
+
+        .footer{
+            position: fixed;
+            bottom: 0;
+            background-color: #cc2a;
+            width: 100%;
+            border: 2px solid #cc2a;
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: #106e03;
+            font-weight: 700;
+        }
+        /* @media only screen and (min-width: 800px) {
+          
+          .floatright h1{
+              font-size: 2rem;
+              margin-bottom: 15px;
+          }
+          .floatright p{
+              font-size: 1rem;
+          }
+      }
+
+        @media only screen and (max-width: 800px) {
+          
+            .floatright h1{
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+            .floatright p{
+                font-size: 0.8rem;
+            }
+        }
+
+       
+        } */
+        @media only screen and (max-width: 768px) {
+        .footer{
+            position: relative;
+            
+            width: 100%;
+            height: 50px;
+
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="scoreClass">
+        <span>Score :</span><span id="result"></span>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="floatright">
+        <h1>Instruction to PlayGame</h1>
+        <p>Use <span class="btn">Up</span> <span class="btn">Down</span> <span class="btn">Left</span> <span class="btn">Right</span> arrow to key to move the snake try to avoid boundary wall to play as long as you can</p>
+    </div>
+    
+    <div class="footer">
+      <p>Developed By: <a href="https://github.com/MansoorAhmedk">Mansoor Ahmed</a></p>  
+    </div>
+
+    
+
+    <script src="snake.js"></script>
+</body>
+</html>
